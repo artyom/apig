@@ -1,7 +1,10 @@
 // Package apig provides an adapter enabling use of http.Handler inside AWS
-// Lambda running as AWS API Gateway HTTP API target.
+// Lambda running as AWS API Gateway HTTP API target. It also supports Lambda
+// Function URLs.
 //
-// For more context see https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html
+// For more context see
+// https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html
+// and https://docs.aws.amazon.com/lambda/latest/dg/lambda-urls.html
 //
 // Usage example:
 //
