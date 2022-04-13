@@ -8,22 +8,22 @@
 //
 // Usage example:
 //
-//  package main
+//	package main
 //
-//  import (
-//      "net/http"
+//	import (
+//	    "net/http"
 //
-//      "github.com/artyom/apig"
-//      "github.com/aws/aws-lambda-go/lambda"
-//  )
+//	    "github.com/artyom/apig"
+//	    "github.com/aws/aws-lambda-go/lambda"
+//	)
 //
-//  func main() {
-//      lambda.Start(apig.Handler(http.HandlerFunc(hello)))
-//  }
+//	func main() {
+//	    lambda.Start(apig.Handler(http.HandlerFunc(hello)))
+//	}
 //
-//  func hello(w http.ResponseWriter, r *http.Request) {
-//      w.Write([]byte("Hello, world!\n"))
-//  }
+//	func hello(w http.ResponseWriter, r *http.Request) {
+//	    w.Write([]byte("Hello, world!\n"))
+//	}
 package apig
 
 import (
