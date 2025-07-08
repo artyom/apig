@@ -44,6 +44,9 @@ import (
 // github.com/aws/aws-lambda-go/lambda package.
 //
 // Note that both request and response are fully cached in memory.
+//
+// For functions invoked in RESPONSE_STREAM mode, use
+// [github.com/aws/aws-lambda-go/lambdaurl.Wrap] instead.
 func Handler(h http.Handler) func(context.Context, *events.APIGatewayV2HTTPRequest) (*events.APIGatewayV2HTTPResponse, error) {
 	if h == nil {
 		panic("Handler called with nil argument")
